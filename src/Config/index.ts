@@ -8,7 +8,7 @@ config({
 
 // Load environment specific variables
 const envFile = process.env.NODE_ENV === 'prod'
-    ? '.env.production'
+    ? '.env'
     : '.env.development';
 
 config({
