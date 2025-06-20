@@ -1,0 +1,13 @@
+node_modules
+*lock
+.idea
+.env
+.env.production
+.env.development
+dist
+update.script.txt
+cicd.yml
+*.yml
+*lock.yml
+*lock.yaml
+demo.js
