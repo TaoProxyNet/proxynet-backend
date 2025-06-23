@@ -26,8 +26,8 @@ COPY --from=build /app/dist ./dist
 
 # Copy the .env files
 COPY --from=build /app/.env ./
-COPY --from=build /app/.env.production ./
-COPY --from=build /app/.env.development ./
+# COPY --from=build /app/.env.production ./
+# COPY --from=build /app/.env.development ./
 
 # Install only production dependencies
 RUN npm install --only=production
