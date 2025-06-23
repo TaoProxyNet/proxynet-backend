@@ -7,9 +7,11 @@ config({
 })
 
 // Load environment specific variables
-const envFile = process.env.NODE_ENV === 'prod'
-    ? '.env'
-    : '.env.development';
+// const envFile = process.env.NODE_ENV === 'prod'
+//     ? '.env'
+//     : '.env.development';
+
+const envFile = '.env';
 
 config({
     path: path.join(process.cwd(), envFile)
