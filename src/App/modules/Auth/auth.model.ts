@@ -59,8 +59,8 @@ const AuthSchema = new Schema<IAuth>({
     },
     socialLoginProvider: {
         type: String,
-        enum: [ESocialLoginProvider.GOOGLE, ESocialLoginProvider.FACEBOOK, ESocialLoginProvider.APPLE],
-        default: ""
+        enum: [ESocialLoginProvider.GOOGLE, ESocialLoginProvider.FACEBOOK, ESocialLoginProvider.APPLE, ESocialLoginProvider.EMAIL],
+        default: ESocialLoginProvider.EMAIL
     },
     profilePicture: {
         type: String,
