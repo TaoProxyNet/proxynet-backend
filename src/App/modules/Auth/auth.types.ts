@@ -18,6 +18,7 @@ export enum ESocialLoginProvider {
     GOOGLE = 'google',
     FACEBOOK = 'facebook',
     APPLE = 'apple',
+    EMAIL = 'email',
 }
 
 export interface IAuth extends Document {
